@@ -1,0 +1,174 @@
+de
+/*
+* @Author: XXL
+* @Date:   2016-03-04 11:21:40
+* @Last Modified by:   XXL
+* @Last Modified time: 2016-03-08 15:37:47
+*/
+
+.cmn-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.cmn-flex-vertical {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.cmn-flex-center-h {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.cmn-flex-center-v {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.cmn-flex-one {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block
+}
+
+@font-face {
+    font-family: baikeFont_layout;
+    src: url(http://baike.bdimg.com/static/wiki-mobile-activity/layout/resource/font/layout_2b0f44f.eot?#iefix);
+    src: url(http://baike.bdimg.com/static/wiki-mobile-activity/layout/resource/font/layout_2b0f44f.eot?#iefix) format('embedded-opentype'), url(http://baike.bdimg.com/static/wiki-mobile-activity/layout/resource/font/layout_3242050.woff2) format('woff2'), url(http://baike.bdimg.com/static/wiki-mobile-activity/layout/resource/font/layout_ad27be4.woff) format('woff'), url(http://baike.bdimg.com/static/wiki-mobile-activity/layout/resource/font/layout_495d2d6.ttf) format('truetype'), url(resource/font/layout.otf) format('opentype'), url(http://baike.bdimg.com/static/wiki-mobile-activity/layout/resource/font/layout_88e093b.svg) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+.layout-icons {
+    font-family: baikeFont_layout;
+    font-weight: 400;
+    font-style: normal
+}
+
+.layout-icons_baike-logo {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe600;")
+}
+
+.layout-icons_baike-logo:before {
+    content: '\e600'
+}
+
+.layout-icons_down-arrow {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe601;")
+}
+
+.layout-icons_down-arrow:before {
+    content: '\e601'
+}
+
+.layout-icons_weibo {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe602;")
+}
+
+.layout-icons_weibo:before {
+    content: '\e602'
+}
+
+.layout-icons_tencent {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe603;")
+}
+
+.layout-icons_tencent:before {
+    content: '\e603'
+}
+
+.layout-icons_wechat {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe604;")
+}
+
+.layout-icons_wechat:before {
+    content: '\e604'
+}
+
+.layout-icons_close {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe605;")
+}
+
+.layout-icons_close:before {
+    content: '\e605'
+}
+
+.layout-icons_right-arrow {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe606;")
+}
+
+.layout-icons_right-arrow:before {
+    content: '\e606'
+}
+
+.layout-icons_share {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe607;")
+}
+
+.layout-icons_share:before {
+    content: '\e607'
+}
+
+.layout-icons_left-arrow {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe608;")
+}
+
+.layout-icons_left-arrow:before {
+    content: '\e608'
+}
+
+.layout-icons_delete {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe609;")
+}
+
+.layout-icons_delete:before {
+    content: '\e609'
+}
+
+.layout-icons_revoke {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe610;")
+}
+
+.layout-icons_revoke:before {
+    content: '\e610'
+}
+
+.layout-icons_draw {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe611;")
+}
+
+.layout-icons_draw:before {
+    content: '\e611'
+}
+
+.layout-icons_like {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe612;")
+}
+
+.layout-icons_like:before {
+    content: '\e612'
+}
+
+.layout-icons_liked {
+    *zoom: expression(this.runtimeStyle["zoom"]="1", this.innerHTML +="&#xe613;")
+}
+
+.layout-icons_liked:before {
+    content: '\e613'
+}

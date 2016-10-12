@@ -1,0 +1,2101 @@
+.cmn-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.cmn-flex-vertical {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.cmn-flex-center-h {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.cmn-flex-center-v {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.cmn-flex-one {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block
+}
+
+.h5-loading {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #333
+}
+
+.h5-loading img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -20px
+}
+
+#J-h5 {
+    display: none;
+    background: #333;
+    font-size: 100px
+}
+
+@media (min-height:701px) {
+    #J-h5 {
+        font-size: 120px
+    }
+}
+
+@media (max-height:460px) {
+    #J-h5 {
+        font-size: 70px
+    }
+}
+
+@media (max-height:500px) and (min-height:461px) {
+    #J-h5 {
+        font-size: 80px
+    }
+}
+
+@media (max-height:560px) and (min-height:501px) {
+    #J-h5 {
+        font-size: 90px
+    }
+}
+
+@media (max-height:700px) and (min-height:640px) {
+    #J-h5 {
+        font-size: 110px
+    }
+}
+
+#J-h5 .page {
+    overflow: hidden;
+    position: relative;
+    text-align: center
+}
+
+#J-h5 .page .h5-arrow {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: .4em;
+    width: 1em;
+    height: 1em;
+    margin-left: -.5em;
+    font-size: .26em;
+    color: #4a9ff2;
+    opacity: 0
+}
+
+#J-h5 .page .page-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+#J-h5 .page .page-title {
+    opacity: 0;
+    font-size: .2em;
+    color: #fff;
+    text-align: center;
+    line-height: 1.8;
+    font-weight: 400
+}
+
+#J-h5 .page .page-title .title {
+    display: inline-block;
+    padding: 0 1em;
+    background: #408ff8
+}
+
+#J-h5 .page .shiji-menu {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    z-index: 10;
+    top: .2em;
+    right: .2em
+}
+
+#J-h5 .page .shiji-menu .menu-item {
+    width: 1.7em;
+    height: 1.7em;
+    line-height: 1.7;
+    background: #989898;
+    color: #fff;
+    font-size: .18em;
+    margin-top: 2px;
+    border-radius: 2px
+}
+
+#J-h5 .page .shiji-menu .menu-item.current {
+    background: #5297f5
+}
+
+#J-h5 .page .picture-container {
+    opacity: 0;
+    height: 65%
+}
+
+#J-h5 .page .picture-container img {
+    height: 100%;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+#J-h5 .page .picture-container .picture-page {
+    overflow: hidden
+}
+
+#J-h5 .page .timeline-title {
+    margin-left: 8%
+}
+
+#J-h5 .page .timeline-title .page-title {
+    text-align: left
+}
+
+#J-h5 .page .timeline-desc {
+    opacity: 0;
+    margin: .2em 8% 0
+}
+
+#J-h5 .page .timeline-desc .item {
+    color: #eee;
+    text-align: left;
+    display: none
+}
+
+#J-h5 .page .timeline-desc .item.show {
+    display: block
+}
+
+#J-h5 .page .timeline-desc .item .item-time {
+    font-size: .2em;
+    line-height: 1
+}
+
+#J-h5 .page .timeline-desc .item .item-intro {
+    font-size: .16em;
+    line-height: 1.5;
+    height: 1em;
+    margin-top: .5em
+}
+
+#J-h5 .page .timeline {
+    opacity: 0;
+    position: relative;
+    width: 90%;
+    height: 2px;
+    margin: .5em 5% 0;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(66, 66, 66, 0)), color-stop(0.1, #424242), color-stop(0.9, #424242), to(rgba(66, 66, 66, 0)))
+}
+
+#J-h5 .page .timeline .timeline-dot {
+    position: absolute;
+    width: 100%;
+    top: -3px
+}
+
+#J-h5 .page .timeline .timeline-dot .dot {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #666;
+    margin-right: .23em
+}
+
+#J-h5 .page .timeline .timeline-dot .dot:last-child {
+    margin-right: 0
+}
+
+#J-h5 .page .timeline .timeline-dot .dot.current {
+    background: #408ff8
+}
+
+#J-h5 .page .timeline .timeline-dot .dot.current:after {
+    pointer-events: none;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: -3px;
+    left: -3px;
+    border-radius: 50%;
+    border: 1px solid #408ff8;
+    content: '';
+    box-sizing: border-box;
+    -webkit-animation-name: toBigAndHide;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-play-state: running;
+    animation-name: toBigAndHide;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running
+}
+
+#J-h5 .page .album-bg {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    background: #e6e6e6;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+#J-h5 .page .album-bg .item-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0
+}
+
+#J-h5 .page .album-bg .item-bg.toshow {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page .album-bg .item-bg.tohide {
+    -webkit-animation-name: tohide;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: tohide;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page .album-container {
+    opacity: 0;
+    position: absolute;
+    left: 12%;
+    top: 9%;
+    z-index: 1;
+    height: 52%;
+    width: 76%
+}
+
+#J-h5 .page .album-container .album .album-page {
+    overflow: hidden;
+    position: relative
+}
+
+#J-h5 .page .album-container .album .album-page .album-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden
+}
+
+#J-h5 .page .album-border {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    left: 12%;
+    top: 9%;
+    width: 76%;
+    height: 52%;
+    border: .04em solid #fff;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    pointer-events: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+#J-h5 .page .album-info {
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    left: 0
+}
+
+#J-h5 .page .album-info .album-desc {
+    opacity: 0;
+    width: 76%;
+    display: inline-block;
+    text-align: left;
+    margin-top: 1em;
+    font-size: .16em;
+    color: #333;
+    line-height: 1.5
+}
+
+#J-h5 .page .album-info .album-dot {
+    opacity: 0;
+    margin-top: .16em
+}
+
+#J-h5 .page .album-info .album-dot span {
+    display: inline-block;
+    vertical-align: top;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #aaa;
+    margin-right: .2em
+}
+
+#J-h5 .page .album-info .album-dot span:last-child {
+    margin-right: 0
+}
+
+#J-h5 .page .album-info .album-dot span.current {
+    background: #408ff8
+}
+
+#J-h5 .page-cover {
+    background: #ddd
+}
+
+#J-h5 .page-cover img {
+    width: 100%
+}
+
+#J-h5 .page-cover .cover-part1,
+#J-h5 .page-cover .cover-part2,
+#J-h5 .page-cover .cover-part3 {
+    opacity: 0
+}
+
+#J-h5 .page-cover .cover-logo {
+    opacity: 0;
+    position: absolute;
+    width: 32%;
+    top: 24%;
+    left: 34%
+}
+
+#J-h5 .page-cover.ani .cover-part1,
+#J-h5 .page-cover.ani-android .cover-part1 {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-cover.ani .cover-part2,
+#J-h5 .page-cover.ani-android .cover-part2 {
+    -webkit-animation-name: toShowAndUp;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toShowAndUp;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-cover.ani .cover-part3,
+#J-h5 .page-cover.ani-android .cover-part3 {
+    -webkit-animation-name: toShowAndUp;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toShowAndUp;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-cover.ani .cover-logo,
+#J-h5 .page-cover.ani-android .cover-logo {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: .6s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: .6s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-cover.ani .h5-arrow,
+#J-h5 .page-cover.ani-android .h5-arrow {
+    -webkit-animation-name: toJump;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-play-state: running;
+    animation-name: toJump;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running
+}
+
+#J-h5 .page-part {
+    background-color: #f5f5f5
+}
+
+#J-h5 .page-part .part-title {
+    position: relative;
+    margin-top: 20%
+}
+
+#J-h5 .page-part .part-title img {
+    width: 100%
+}
+
+#J-h5 .page-part .part-title .main-title {
+    opacity: 0
+}
+
+#J-h5 .page-part .part-title .sub-title {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+#J-h5 .page-part .part-intro {
+    opacity: 0;
+    width: 54%;
+    display: inline-block;
+    text-align: left;
+    margin-top: 1em;
+    color: #333;
+    font-size: .15em;
+    line-height: 1.5
+}
+
+#J-h5 .page-part.ani .main-title {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 1.6s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani .sub-title1 {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: .8s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: .8s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani .sub-title2 {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani .sub-title3 {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 1.2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: 1.2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani .part-intro {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 1.6s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani .shiji-menu {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 1.6s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani .h5-arrow {
+    -webkit-animation-name: toJump;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2.4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-play-state: running;
+    animation-name: toJump;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2.4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani-android .main-title {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 1.6s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani-android .sub-title1 {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: .8s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: .8s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani-android .sub-title2 {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani-android .sub-title3 {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 1.2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: 1.2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani-android .part-intro {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 1.6s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani-android .shiji-menu {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 1.6s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-part.ani-android .h5-arrow {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-delay: 2.4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-oneimg {
+    background: #f5f5f5
+}
+
+#J-h5 .page-oneimg .oneimg {
+    position: relative;
+    height: 55%;
+    overflow: hidden;
+    background: #f5f5f5
+}
+
+#J-h5 .page-oneimg .oneimg img {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    left: 0
+}
+
+#J-h5 .page-oneimg .oneimg-intro {
+    opacity: 0;
+    margin-top: 2em;
+    color: #333;
+    font-size: .15em;
+    width: 75%;
+    display: inline-block;
+    text-align: left;
+    line-height: 1.5
+}
+
+#J-h5 .page-oneimg.ani .oneimg img,
+#J-h5 .page-oneimg.ani-android .oneimg img {
+    -webkit-animation-name: toBigAndShow;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toBigAndShow;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-oneimg.ani .page-title,
+#J-h5 .page-oneimg.ani-android .page-title {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: .4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-oneimg.ani .oneimg-intro,
+#J-h5 .page-oneimg.ani-android .oneimg-intro {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 1.2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: 1.2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-oneimg.ani .h5-arrow,
+#J-h5 .page-oneimg.ani-android .h5-arrow {
+    -webkit-animation-name: toJump;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-play-state: running;
+    animation-name: toJump;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1.6s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running
+}
+
+#J-h5 .page-oneimg.ani .shiji-menu,
+#J-h5 .page-oneimg.ani-android .shiji-menu {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-album {
+    background: #e6e6e6
+}
+
+#J-h5 .page-album img {
+    height: 100%;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+#J-h5 .page-album .item {
+    display: none
+}
+
+#J-h5 .page-album .item.show {
+    display: block
+}
+
+#J-h5 .page-album.ani .album-container,
+#J-h5 .page-album.ani-android .album-container {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-album.ani .album-border,
+#J-h5 .page-album.ani-android .album-border {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-album.ani .page-title,
+#J-h5 .page-album.ani-android .page-title {
+    -webkit-animation-name: toShowAndUp;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toShowAndUp;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-album.ani .album-desc,
+#J-h5 .page-album.ani-android .album-desc,
+#J-h5 .page-album.ani .album-dot,
+#J-h5 .page-album.ani-android .album-dot {
+    -webkit-animation-name: toShowAndUp;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 1.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toShowAndUp;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-album.ani .h5-arrow,
+#J-h5 .page-album.ani-android .h5-arrow {
+    -webkit-animation-name: toJump;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1.8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-play-state: running;
+    animation-name: toJump;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1.8s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running
+}
+
+#J-h5 .page-album.ani .shiji-menu,
+#J-h5 .page-album.ani-android .shiji-menu {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-shang1 {
+    background: url(http://baike.bdimg.com/static/wiki-mobile-activity/widget/shiji-h5/shiji-subject/img/shang-1-bg_f20f996.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: bottom center
+}
+
+#J-h5 .page-shang2 {
+    background: #333
+}
+
+#J-h5 .page-shang2 .picture-container {
+    background: #333
+}
+
+#J-h5 .page-shang2.ani .picture-container,
+#J-h5 .page-shang2.ani-android .picture-container {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-shang2.ani .page-title,
+#J-h5 .page-shang2.ani-android .page-title {
+    -webkit-animation-name: toShowAndUp;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toShowAndUp;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-shang2.ani .timeline-desc,
+#J-h5 .page-shang2.ani-android .timeline-desc,
+#J-h5 .page-shang2.ani .timeline,
+#J-h5 .page-shang2.ani-android .timeline {
+    -webkit-animation-name: toShowAndUp;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 1.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toShowAndUp;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-shang2.ani .h5-arrow,
+#J-h5 .page-shang2.ani-android .h5-arrow {
+    -webkit-animation-name: toJump;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1.8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-play-state: running;
+    animation-name: toJump;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1.8s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running
+}
+
+#J-h5 .page-shang2.ani .shiji-menu,
+#J-h5 .page-shang2.ani-android .shiji-menu {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-shang3 img {
+    bottom: 0
+}
+
+#J-h5 .page-yao1 .yao-bg {
+    position: absolute;
+    width: 100%;
+    left: 0
+}
+
+#J-h5 .page-yao1 .yao-bg img {
+    width: 100%
+}
+
+#J-h5 .page-yao1 .yao-bg.yao-bg1 {
+    top: 0
+}
+
+#J-h5 .page-yao1 .yao-bg.yao-bg2 {
+    bottom: 0
+}
+
+#J-h5 .page-yao1 .yao-part {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+#J-h5 .page-yao2 {
+    background: #e6e6e6
+}
+
+#J-h5 .page-yao2 .picture-container {
+    background: #e6e6e6
+}
+
+#J-h5 .page-yao2 .item {
+    display: none
+}
+
+#J-h5 .page-yao2 .item.show {
+    display: block
+}
+
+#J-h5 .page-yao2.ani .picture-container,
+#J-h5 .page-yao2.ani-android .picture-container {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-yao2.ani .page-title,
+#J-h5 .page-yao2.ani-android .page-title {
+    -webkit-animation-name: toShowAndUp;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toShowAndUp;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-yao2.ani .album-desc,
+#J-h5 .page-yao2.ani-android .album-desc,
+#J-h5 .page-yao2.ani .album-dot,
+#J-h5 .page-yao2.ani-android .album-dot {
+    -webkit-animation-name: toShowAndUp;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 1.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toShowAndUp;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-yao2.ani .h5-arrow,
+#J-h5 .page-yao2.ani-android .h5-arrow {
+    -webkit-animation-name: toJump;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1.8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-play-state: running;
+    animation-name: toJump;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1.8s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running
+}
+
+#J-h5 .page-yao2.ani .shiji-menu,
+#J-h5 .page-yao2.ani-android .shiji-menu {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-yao3 img {
+    top: 0
+}
+
+#J-h5 .page-ming1 .ming-bg {
+    position: absolute;
+    width: 100%;
+    left: 0
+}
+
+#J-h5 .page-ming1 .ming-bg img {
+    width: 100%
+}
+
+#J-h5 .page-ming1 .ming-bg.ming-bg1 {
+    top: 0
+}
+
+#J-h5 .page-ming1 .ming-bg.ming-bg2 {
+    bottom: 0
+}
+
+#J-h5 .page-ming1 .ming-part {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+#J-h5 .page-ming2 img {
+    bottom: 0
+}
+
+#J-h5 .page-ming3 img {
+    bottom: 0
+}
+
+#J-h5 .page-ming4 img {
+    top: 0
+}
+
+#J-h5 .page-end {
+    background-color: #408ff8
+}
+
+#J-h5 .page-end .end-bg {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0
+}
+
+#J-h5 .page-end .end-bg img {
+    width: 100%
+}
+
+#J-h5 .page-end .end-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+#J-h5 .page-end .end-title {
+    opacity: 0;
+    margin-top: .4em
+}
+
+#J-h5 .page-end .end-title img {
+    width: 100%
+}
+
+#J-h5 .page-end .end-card-container {
+    opacity: 0
+}
+
+#J-h5 .page-end .end-card {
+    width: 2.5em;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: .6em
+}
+
+#J-h5 .page-end .end-card img {
+    display: block;
+    width: 100%
+}
+
+#J-h5 .page-end .end-card .sign-part {
+    position: relative
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-container {
+    position: absolute;
+    width: 2.5em;
+    height: 2.3em;
+    top: 0;
+    left: 0
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-head {
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    top: -.6em;
+    left: .65em
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-head .head-item {
+    border: 3px solid #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-head .head-item.toshow {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-head .head-item.tohide {
+    -webkit-animation-name: tohide;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: tohide;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-head .head-item img {
+    width: 100%;
+    border-radius: 50%
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-pagenum {
+    position: absolute;
+    bottom: 1.5em;
+    right: 1.5em;
+    color: #888;
+    font-size: .12em;
+    line-height: 1
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-pagenum .curnum {
+    color: #666
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-name {
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.5em;
+    color: #333;
+    font-size: .12em;
+    line-height: 1
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-name .name-item {
+    display: none
+}
+
+#J-h5 .page-end .end-card .sign-part .sign-name .name-item.show {
+    display: block
+}
+
+#J-h5 .page-end .end-card .sign-part .left-arrow,
+#J-h5 .page-end .end-card .sign-part .right-arrow {
+    position: absolute;
+    z-index: 10;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    width: .4em;
+    height: .4em;
+    top: .9em;
+    color: rgba(255, 255, 255, .6)
+}
+
+#J-h5 .page-end .end-card .sign-part .left-arrow.left-arrow,
+#J-h5 .page-end .end-card .sign-part .right-arrow.left-arrow {
+    left: -.4em
+}
+
+#J-h5 .page-end .end-card .sign-part .left-arrow.right-arrow,
+#J-h5 .page-end .end-card .sign-part .right-arrow.right-arrow {
+    right: -.4em
+}
+
+#J-h5 .page-end .end-card .sign-part .left-arrow.hide,
+#J-h5 .page-end .end-card .sign-part .right-arrow.hide {
+    display: none
+}
+
+#J-h5 .page-end .end-card .sign-part .left-arrow em,
+#J-h5 .page-end .end-card .sign-part .right-arrow em {
+    display: block;
+    font-size: .2em;
+    line-height: 2
+}
+
+#J-h5 .page-end .video-container {
+    opacity: 0;
+    *zoom: 1;
+    width: 2.5em;
+    display: inline-block;
+    margin-top: .2em
+}
+
+#J-h5 .page-end .video-container:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden
+}
+
+#J-h5 .page-end .video-container .video-item {
+    width: 1.1em;
+    float: left
+}
+
+#J-h5 .page-end .video-container .video-item:last-child {
+    float: right
+}
+
+#J-h5 .page-end .video-container .video-item .video-img {
+    position: relative;
+    border: 1px solid #222;
+    overflow: hidden
+}
+
+#J-h5 .page-end .video-container .video-item .video-img img {
+    width: 100%;
+    display: block
+}
+
+#J-h5 .page-end .video-container .video-item .video-img .play-icon {
+    position: absolute;
+    width: .3em;
+    height: .3em;
+    top: 50%;
+    left: 50%;
+    margin-left: -.15em;
+    margin-top: -.15em
+}
+
+#J-h5 .page-end .video-container .video-item .video-img .ios-video {
+    position: absolute;
+    left: -1px;
+    top: 0;
+    display: none
+}
+
+#J-h5 .page-end .video-container .video-item .video-name {
+    font-size: .15em;
+    line-height: 1;
+    margin-top: .5em;
+    color: #fff
+}
+
+#J-h5 .page-end .android-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    display: none
+}
+
+#J-h5 .page-end .android-video .video-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    background: #000
+}
+
+#J-h5 .page-end .android-video .video-container .video {
+    display: none
+}
+
+#J-h5 .page-end .android-video .video-close {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px
+}
+
+#J-h5 .page-end .android-video .video-close .layout-icons_close {
+    display: block;
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff
+}
+
+#J-h5 .page-end .go-page-0 {
+    opacity: 0;
+    position: absolute;
+    font-size: .16em;
+    line-height: 2;
+    width: 3em;
+    height: 2em;
+    top: .625em;
+    left: .625em;
+    background: #2369c7;
+    color: #fff;
+    border-radius: 4px
+}
+
+#J-h5 .page-end .go-draw {
+    opacity: 0;
+    margin-top: .15em;
+    width: 2.5em;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: .1em;
+    color: #fff
+}
+
+#J-h5 .page-end .go-draw em,
+#J-h5 .page-end .go-draw span {
+    display: inline-block;
+    font-size: .18em;
+    line-height: 2;
+    vertical-align: top
+}
+
+#J-h5 .page-end .go-draw em {
+    margin-right: .1rem
+}
+
+#J-h5 .page-end .h5-share {
+    opacity: 0;
+    position: absolute;
+    width: .32em;
+    height: .32em;
+    top: .1em;
+    right: .1em;
+    background: #2369c7;
+    border-radius: 4px
+}
+
+#J-h5 .page-end .h5-share .layout-icons_share {
+    display: block;
+    font-size: .16em;
+    line-height: 2;
+    color: rgba(255, 255, 255, .8)
+}
+
+#J-h5 .page-end.ani .end-title,
+#J-h5 .page-end.ani-android .end-title {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-end.ani .end-card-container,
+#J-h5 .page-end.ani-android .end-card-container {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: .4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-end.ani .end-bg,
+#J-h5 .page-end.ani-android .end-bg {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: .4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-in;
+    animation-delay: .4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-end.ani .video-container,
+#J-h5 .page-end.ani-android .video-container {
+    -webkit-animation-name: toShowAndUp;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 1.2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toShowAndUp;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-end.ani .go-draw,
+#J-h5 .page-end.ani-android .go-draw {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-end.ani .go-page-0,
+#J-h5 .page-end.ani-android .go-page-0 {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+#J-h5 .page-end.ani .h5-share,
+#J-h5 .page-end.ani-android .h5-share {
+    -webkit-animation-name: toshow;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-play-state: running;
+    animation-name: toshow;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running
+}
+
+@-webkit-keyframes toBigAndHide {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 0
+    }
+    20% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0
+    }
+}
+
+@keyframes toBigAndHide {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 0
+    }
+    20% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes toBigAndShow {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0
+    }
+    5% {
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 1
+    }
+}
+
+@keyframes toBigAndShow {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0
+    }
+    5% {
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes toShowAndUp {
+    0% {
+        -webkit-transform: translate3d(0px, 10px, 0);
+        transform: translate3d(0px, 10px, 0);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@keyframes toShowAndUp {
+    0% {
+        -webkit-transform: translate3d(0px, 10px, 0);
+        transform: translate3d(0px, 10px, 0);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes toshow {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes toshow {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@-webkit-keyframes tohide {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes tohide {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes toJump {
+    0% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 0
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 0
+    }
+}
+
+@keyframes toJump {
+    0% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 0
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 0
+    }
+}
+
+.page-end .layer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.page-end .float-share {
+    position: absolute
+}
+
+.page-end .float-wechat-qrcode {
+    position: absolute;
+    font-size: .13rem
+}
+
+.page-end .wechat-share-tip {
+    position: absolute
+}
